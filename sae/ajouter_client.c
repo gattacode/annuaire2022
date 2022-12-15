@@ -45,6 +45,6 @@ int main()
 
     printf("%s,%s,%s,%s,%s,%s,%s", nom_p,prenom_p,code_postale_p,ville_p,tel_p,mel_p,profession_p);
 
-    return 0;
+    return ;
 }
 
