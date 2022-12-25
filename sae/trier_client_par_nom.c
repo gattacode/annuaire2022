@@ -19,10 +19,10 @@ int compare_lignes(const void *a, const void *b) {
 }
 
 // Fonction de tri par ordre alphabetique
-void trier_clients_par_nom(const char *filename) {
+int trier_clients_par_nom(const char *nom_fichier) {
 
     // On ouvre le fichier en mode ecriture
-    FILE *fp = fopen(filename, "r");
+    FILE *fp = fopen(nom_fichier, "r");
     if (fp == NULL) {
         perror("Fichier introuvable");
         return;
@@ -72,4 +72,6 @@ void trier_clients_par_nom(const char *filename) {
 
     // On libère la mémoire alloué aux lignes
     free(lignes);
+
+    return 0;
 }

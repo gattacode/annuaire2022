@@ -6,7 +6,7 @@
 #define MAX_ligne_LENGTH 1024
 
 // Fonction de comptage de ligne dans un fichier
-int nombre_ligne(const char *filename)
+int nombre_ligne(const char *nom_fichier)
 {
     // On initialise le compteur de ligne
     int nombre = 0;
@@ -15,7 +15,7 @@ int nombre_ligne(const char *filename)
     char c;  
 
     // Open the file
-    FILE *annuaire = fopen(filename, "r");
+    FILE *annuaire = fopen(nom_fichier, "r");
 
     // Verification de l'existence du fichier
     if (annuaire == NULL)
@@ -38,13 +38,13 @@ int nombre_ligne(const char *filename)
 
 // Fonction d'affichage d'une ligne specifique contenu dans un fichier
 
-int afficher_ligne(int a,const char *filename)
+int afficher_ligne(int a,const char *nom_fichier)
 {
     // Choix de la ligne a afficher
     int numero_ligne = a;
 
     // Ouverture du fichier en mode lecture
-    FILE *annuaire = fopen(filename, "r");
+    FILE *annuaire = fopen(nom_fichier, "r");
     int i = 0;
 
     if ( annuaire != NULL )
@@ -72,10 +72,10 @@ int afficher_ligne(int a,const char *filename)
 }
 
 // Fonction pour afficher chaque ligne d'un fichier
-int afficher_annuaire_client(const char *filename)
+int afficher_annuaire_client(const char *nom_fichier)
 {
-    for(int i = 0; i < nombre_ligne(filename); i++){
-        afficher_ligne(i,filename);
+    for(int i = 0; i < nombre_ligne(nom_fichier); i++){
+        afficher_ligne(i,nom_fichier);
     }
     return 0;
 }
