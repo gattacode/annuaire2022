@@ -55,17 +55,16 @@ int afficher_ligne(int a,const char *filename)
         while (fgets(ligne, sizeof ligne, annuaire) != NULL) 
         {
             if (i == numero_ligne)
-            {
-                
+            {                
                 printf("%s",ligne);
 
                 // Fermeture du fichier
                 fclose(annuaire);
                 return 0;
             }
-
             else
             {
+                // On passe a la prochaine ligne
                 i++;
             }
         }

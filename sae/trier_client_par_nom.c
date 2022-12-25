@@ -20,6 +20,7 @@ int compare_lignes(const void *a, const void *b) {
 
 // Fonction de tri par ordre alphabetique
 void trier_clients_par_nom(const char *filename) {
+
     // On ouvre le fichier en mode ecriture
     FILE *fp = fopen(filename, "r");
     if (fp == NULL) {
@@ -34,11 +35,14 @@ void trier_clients_par_nom(const char *filename) {
     // On lit chaque ligne du fichier et on la garde dans l'array de lignes
     char buffer[MAX_ligne_LENGTH];
     while (fgets(buffer, MAX_ligne_LENGTH, fp) != NULL) {
+
         // On alloue de la memoire pour garder le texte de la ligne et le copier
         lignes[num_lignes].text = malloc(strlen(buffer) + 1);
         strcpy(lignes[num_lignes].text, buffer);
+
         // On garde la longueur de la ligne
         lignes[num_lignes].longueur = strlen(buffer);
+
         // On incremente le compteur et on realloue la memoire pour l'array
         num_lignes++;
         lignes = realloc(lignes, (num_lignes + 1) * sizeof(ligne));
