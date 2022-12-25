@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include "fonctions.h"
+
 int main()
 {
     int entrer=0;
