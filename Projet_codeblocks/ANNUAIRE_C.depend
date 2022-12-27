@@ -1,0 +1,44 @@
+# depslib dependency file v1.0
+1672158506 source:c:\users\gatta\documents\cours\but1\c\saecbrouillon\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+	"fonctions.h"
+
+1672160136 source:c:\users\gatta\documents\cours\but1\c\saecbrouillon\afficher_annuaire_client.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fonctions.h"
+
+1672158512 c:\users\gatta\documents\cours\but1\c\saecbrouillon\fonctions.h
+
+1672159244 source:c:\users\gatta\documents\cours\but1\c\saecbrouillon\trier_clients_par_nom.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fonctions.h"
+
+1672160402 source:c:\users\gatta\documents\cours\but1\c\saecbrouillon\ecriture_annuaire_client.c
+	<stdio.h>
+	<string.h>
+
+1672158557 source:c:\users\gatta\documents\cours\but1\c\saecbrouillon\filtrer_client_donnee_manquantes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fonctions.h"
+	<stdio.h>
+	<string.h>
+
+1672159796 source:c:\users\gatta\documents\cours\but1\c\saecbrouillon\couleur.c
+	<stdio.h>
+	<windows.h>
+	"fonctions.h"
+
+1672159203 source:c:\users\gatta\documents\cours\but1\c\saecbrouillon\verifier_validite_annuaire_client.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
