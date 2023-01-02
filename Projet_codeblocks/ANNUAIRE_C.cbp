@@ -34,10 +34,16 @@
 		<Unit filename="afficher_annuaire_client.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="ajouter_client.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="couleur.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="ecriture_annuaire_client.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ff.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="filtrer_client_donnee_manquantes.c">
@@ -45,6 +51,15 @@
 		</Unit>
 		<Unit filename="fonctions.h" />
 		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="modifier_client_autre_que_mel.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="modifier_mel_client.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="supprimer_client.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="trier_clients_par_nom.c">

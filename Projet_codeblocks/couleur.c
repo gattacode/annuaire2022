@@ -10,7 +10,7 @@ void Couleur(int ForgC)
   HANDLE hStdOut = GetStdHandle(STD_OUTPUT_HANDLE);
   CONSOLE_SCREEN_BUFFER_INFO csbi;
 
-                       //On utilise csbi pour les attributs mots
+                //On utilise csbi pour les attributs mots
  if(GetConsoleScreenBufferInfo(hStdOut, &csbi))
  {
                  // On masque les attributs du fond et on ajoute de la couleur au texte
