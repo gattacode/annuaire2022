@@ -10,7 +10,6 @@ int ajouter_client(const char *nom_fichier);
 int modifier_mel_client(const char *nom_fichier);
 int supprimer_client(const char *nomfichier);
 int modifier_client_autre_que_mel(const char *nomfichier);
-
 void Couleur(int ForgC);
 #endif
 

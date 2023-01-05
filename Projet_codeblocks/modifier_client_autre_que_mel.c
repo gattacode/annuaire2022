@@ -68,9 +68,5 @@ int echamge(FILE *annuaire, const char *nom, const char *prenom, const char *cod
     int b=strlen(prenom);
 
 
-    while (i<n){
-        buffer[i]=
-    }
-
     return 0;
 }

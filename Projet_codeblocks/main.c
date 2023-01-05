@@ -7,6 +7,8 @@
 #include "fonctions.h"
 
 
+
+
 int main()
 {
     int entree=0;
@@ -51,7 +53,7 @@ int main()
             case 2: Couleur(2); printf("Vous avez choisi : Modification client\n"); printf("\n"); Couleur(15); modifier_mel_client(nomfichier);break;
             case 3: Couleur(2); printf("Vous avez choisi : Suppression client\n"); Couleur(15); supprimer_client(nomfichier); break;
             case 4: Couleur(2); printf("Vous avez choisi : Afficher la liste des clients\n"); printf("\n"); Couleur(15); Sleep(2000); afficher_annuaire_client(nomfichier); break;
-            case 5: Couleur(2); printf("Vous avez choisi : Afficher la liste des clients trier par nom\n"); printf("\n"); Couleur(15); Sleep(2000); trier_clients_par_nom(nomfichier); afficher_annuaire_client("annuaire_triee.csv"); break;
+            case 5: Couleur(2); printf("Vous avez choisi : Afficher la liste des clients trier par nom\n"); printf("\n"); Couleur(15); Sleep(2000); trier_clients_par_nom(nomfichier); afficher_annuaire_client("fichier.txt"); break;
             case 6: Couleur(2); printf("Vous avez choisi : Afficher les clients avec des donnees manquantes\n"); printf("\n"); Couleur(15); Sleep(2000); filtrer_client_donnees_manquantes(nomfichier); break;
             case 7: Couleur(2); printf("Vous avez choisi : Ecrire dans l'annuaire des clients\n"); printf("\n"); Couleur(15); Sleep(2000); ecriture_annuaire_client(nomfichier); break;
             case 8: Couleur(2); printf("Vous avez choisi : Verifier la validite de l'annuaire\n"); printf("\n"); Couleur(15); Sleep(2000); verifier_validite_annuaire_client(nomfichier); break;

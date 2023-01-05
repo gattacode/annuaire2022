@@ -1,41 +1,43 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
+#include <stdlib.h>
 
-#include "fonctions.h"
 
 #define LONGUEUR_MAX_LIGNE 2048
 
-int supprimer_client(const char *nomfichier){
-    FILE *annuaire = fopen(nomfichier, "r+");
+int supprimer_client(const char *nomfichier) {
 
-    char buffer[LONGUEUR_MAX_LIGNE];
-    char mel[500];
-    char nom[40];
-    char prenom[30];
-    int m=0;
+	FILE *input = fopen(nomfichier, "r");
+	FILE *output = fopen("fichier.txt", "w");
 
-    printf("Quel est le nom de la personne que vous voulez suprimer ? : ");
+	char line[LONGUEUR_MAX_LIGNE];
+
+	char nom[163];
+	char mail[500];
+
+    printf("\nQuel est le nom de la personne que vous voulez suprimer ? : ");
     scanf("%s",nom);
-    printf("Quel est le prenom de la personne que vous voulez suprimer ? : ");
-    scanf("%s",prenom);
     printf("Quel est le mail de la personne que vous voulez suprimez ? : ");
-    scanf("%s",mel);
+    scanf("%s",mail);
 
-    while (fgets(buffer, LONGUEUR_MAX_LIGNE, annuaire) != NULL) {
-        if ((strstr(buffer, nom)!= NULL )&&(strstr(buffer, prenom)!= NULL )&&(strstr(buffer, mel)!= NULL )) {
-            printf("Cette personne a ete suprimer : \n%s\n", buffer);
-        }
-    }
 
-    int i=strlen(buffer);
-    while (i<m){
-        if (buffer[i]!='\0'){
-            buffer[i]=' ';
-        }
-        i=i+1;
-    }
 
-    fclose(annuaire);
-    return 0;
+	// Copie du fichier d'input dans le fichier d'output à l'exception
+	// des lignes contenant le nom et l'email donnés
+	while (fgets(line, LONGUEUR_MAX_LIGNE, input) != NULL) {
+        if ((strstr(line, nom)!= NULL )&&(strstr(line, mail)!= NULL )) {
+            Couleur(4);
+            printf("\nCette ligne a ete sup : \n%s",line);
+            Couleur(15);
+		}
+		if (strstr(line, nom) == NULL || strstr(line, mail) == NULL) {
+			fputs(line, output);
+		}
+	}
+    Couleur(2);
+    printf("\nLa personne a bien ete suprimer\n\n");
+    Couleur(15);
+	fclose(input);
+	fclose(output);
+	return 0;
 }
