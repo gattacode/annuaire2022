@@ -171,6 +171,6 @@ void modif(FILE *annuaire, FILE *output, const char *var, int m, int q, const ch
 
 //-------------------------------------------------------------------------------------------------------------//
 
-    printf("\n%s", nv);
+    fprintf("\n%s", nv);
     fclose(output);
 }
