@@ -1,50 +1,72 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
-int main()
-{
-    char nomannuaire[]="annuaire.csv"; /* mettre le nom du fichier */
-    FILE* entree;
-    entree=fopen(nomannuaire, "w");
+#include "fonctions.h"
+#define LONGUEUR_MAX_LIGNE 2048
 
-    if(!entree){
-        perror("fichier non trouver");
-        return 1;
+
+void ecrire_nv_client(FILE *annuaire, FILE *output, const char *nom, const char *prenom, const char *code_postale, const char *ville, const char *tel, const char *mail, const char *prof);
+
+int ajouter_client(const char *nomfichier){
+    FILE *annuaire = fopen(nomfichier, "r");
+    FILE *output=fopen("fichier.txt","w");
+
+//-------------------------------------------------------------------------------------------------------------//
+//on defini tout les variables //
+
+    char nom[40];
+    char prenom[20];
+    char code_postale[6];
+    char ville[58];
+    char tel[14];
+    char mail[400];
+    char prof[500];
+//-------------------------------------------------------------------------------------------------------------//
+
+//-------------------------------------------------------------------------------------------------------------//
+// On prend ce que l'utilisateur veut ecrire //
+    printf("Ecrivez les donnees du client : ");
+    printf("\nNom : ");
+    scanf("%s", nom);
+    printf("Prenom : ");
+    scanf("%s", prenom);
+    printf("Code Postal : ");
+    scanf("%s", code_postale);
+    printf("Ville : ");
+    scanf("%s", ville);
+    printf("Numero de tel : ");
+    scanf("%s", tel);
+    printf("Mail : ");
+    scanf("%s",mail);
+    printf("Profession : ");
+    scanf("%s",prof);
+//-------------------------------------------------------------------------------------------------------------//
+
+    ecrire_nv_client(annuaire,output, nom, prenom, code_postale, ville, tel, mail, prof);
+
+    fclose(annuaire);
+    fclose(output);
+    return 0;
+}
+
+void ecrire_nv_client(FILE *annuaire, FILE *output, const char *nom, const char *prenom, const char *code_postale, const char *ville, const char *tel, const char *mail, const char *prof){
+
+    char buffer[600];
+
+//-------------------------------------------------------------------------------------------------------------//
+//on ecrit toutes les lignes de l'annuaire dans le fichier et on ajout la ligne en plus a la fin du fichier    //
+    while (fgets(buffer, LONGUEUR_MAX_LIGNE, annuaire) != NULL) {
+        fseek(output, 0, SEEK_END);
+        fputs(buffer,output);
+        if ((strstr(buffer, nom)!= NULL )&&(strstr(buffer, prenom)!= NULL )&&(strstr(buffer, mail)!= NULL )){
+            printf("\nLa personne a déjà été rajouter");
+        }
     }
 
-    char nom_p[40];
-    char prenom_p[20];
-    char code_postale_p[7];
-    char ville_p[58];
-    char tel_p[14];
-    char mel_p[400];
-    char profession_p[500];
+    fprintf(output, "\n%s, %s, %s, %s, %s, %s, %s", nom, prenom, code_postale, ville, tel, mail, prof);
+//--------------------------------------------------------------------------------------------------------------//
 
-    printf("Renseigner :\n");
-
-    printf("Nom : ");
-    fgets("%39s", nom_p);
-
-    printf("Prenom : ");
-    fgets("%19s", prenom_p);
-
-    printf("Code Postal : ");
-    fgets("%6s", code_postale_p);
-
-    printf("Ville : ");
-    fgets("%57s", ville_p);
-
-    printf("Numero de tel : ");
-    fgets("%13s", tel_p);
-
-    printf("Mail : ");
-    fgets("%399s",mel_p);
-
-    printf("Profession : ");
-    fgets("%499s", profession_p);
-
-    printf("%s,%s,%s,%s,%s,%s,%s", nom_p,prenom_p,code_postale_p,ville_p,tel_p,mel_p,profession_p);
-
-    return ;
+    printf("\nCe que vous avez ecrit a bien ete ajoute au fichier. \n");
 }
 

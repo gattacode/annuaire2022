@@ -3,7 +3,7 @@
 #include <string.h>
 #include "fonctions.h"
 
-#define MAX_ligne_LENGTH 1024
+#define LONGUEUR_MAX_LIGNE 2048
 
 // Fonction de comptage de ligne dans un fichier
 int nombre_ligne(const char *nom_fichier)
@@ -12,9 +12,9 @@ int nombre_ligne(const char *nom_fichier)
     int nombre = 0;
 
     // Pour garder le caractere
-    char c;  
+    char c;
 
-    // Open the file
+    // On ouvre le fichier
     FILE *annuaire = fopen(nom_fichier, "r");
 
     // Verification de l'existence du fichier
@@ -24,9 +24,9 @@ int nombre_ligne(const char *nom_fichier)
         return 0;
     }
 
-    // Extract characters from file and store in character c
+    // On extrait le caractere depuis le fichier et on le gard dans c
     for (c = getc(annuaire); c != EOF; c = getc(annuaire))
-        if (c == '\n') 
+        if (c == '\n')
             // On incremente le compteur si le caratere est une nouvelle ligne
             nombre = nombre + 1;
 
@@ -49,19 +49,26 @@ int afficher_ligne(int a,const char *nom_fichier)
 
     if ( annuaire != NULL )
     {
-        char ligne[MAX_ligne_LENGTH];
+        char ligne[LONGUEUR_MAX_LIGNE];
 
         // Lecture de la ligne
-        while (fgets(ligne, sizeof ligne, annuaire) != NULL) 
+        while (fgets(ligne, sizeof ligne, annuaire) != NULL)
         {
             if (i == numero_ligne)
-            {                
+            {
+                for (int y = 0; y < strlen(ligne); y++) {
+                    // Si le caractère est une virgule, remplacez-le par un espace
+                    if (ligne[y] == ',') {
+                        ligne[y] = ' ';
+                    }
+                }
                 printf("%s",ligne);
 
                 // Fermeture du fichier
                 fclose(annuaire);
                 return 0;
             }
+
             else
             {
                 // On passe a la prochaine ligne
@@ -69,6 +76,7 @@ int afficher_ligne(int a,const char *nom_fichier)
             }
         }
     }
+    return -1;
 }
 
 // Fonction pour afficher chaque ligne d'un fichier

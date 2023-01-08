@@ -1,0 +1,221 @@
+# depslib dependency file v1.0
+1672158506 source:c:\users\gatta\documents\cours\but1\c\saecbrouillon\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+	"fonctions.h"
+
+1672160136 source:c:\users\gatta\documents\cours\but1\c\saecbrouillon\afficher_annuaire_client.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fonctions.h"
+
+1672158512 c:\users\gatta\documents\cours\but1\c\saecbrouillon\fonctions.h
+
+1672159244 source:c:\users\gatta\documents\cours\but1\c\saecbrouillon\trier_clients_par_nom.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fonctions.h"
+
+1672160402 source:c:\users\gatta\documents\cours\but1\c\saecbrouillon\ecriture_annuaire_client.c
+	<stdio.h>
+	<string.h>
+
+1672158557 source:c:\users\gatta\documents\cours\but1\c\saecbrouillon\filtrer_client_donnee_manquantes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fonctions.h"
+	<stdio.h>
+	<string.h>
+
+1672159796 source:c:\users\gatta\documents\cours\but1\c\saecbrouillon\couleur.c
+	<stdio.h>
+	<windows.h>
+	"fonctions.h"
+
+1672159203 source:c:\users\gatta\documents\cours\but1\c\saecbrouillon\verifier_validite_annuaire_client.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1672160675 source:c:\users\gatta\desktop\annuaire-1\projet_codeblocks\afficher_annuaire_client.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fonctions.h"
+
+1672160675 c:\users\gatta\desktop\annuaire-1\projet_codeblocks\fonctions.h
+
+1672160675 source:c:\users\gatta\desktop\annuaire-1\projet_codeblocks\couleur.c
+	<stdio.h>
+	<windows.h>
+	"fonctions.h"
+
+1672160675 source:c:\users\gatta\desktop\annuaire-1\projet_codeblocks\ecriture_annuaire_client.c
+	<stdio.h>
+	<string.h>
+
+1672160675 source:c:\users\gatta\desktop\annuaire-1\projet_codeblocks\filtrer_client_donnee_manquantes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fonctions.h"
+	<stdio.h>
+	<string.h>
+
+1672160675 source:c:\users\gatta\desktop\annuaire-1\projet_codeblocks\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+	"fonctions.h"
+
+1672160675 source:c:\users\gatta\desktop\annuaire-1\projet_codeblocks\trier_clients_par_nom.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fonctions.h"
+
+1672160675 source:c:\users\gatta\desktop\annuaire-1\projet_codeblocks\verifier_validite_annuaire_client.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1673208437 source:c:\users\gatta\downloads\annuaire\projet_codeblocks\afficher_annuaire_client.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fonctions.h"
+
+1673207235 c:\users\gatta\downloads\annuaire\projet_codeblocks\fonctions.h
+	"fonctions.h"
+
+1672160675 source:c:\users\gatta\downloads\annuaire\projet_codeblocks\couleur.c
+	<stdio.h>
+	<windows.h>
+	"fonctions.h"
+
+1672160675 source:c:\users\gatta\downloads\annuaire\projet_codeblocks\ecriture_annuaire_client.c
+	<stdio.h>
+	<string.h>
+
+1673208448 source:c:\users\gatta\downloads\annuaire\projet_codeblocks\filtrer_client_donnee_manquantes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fonctions.h"
+	<stdio.h>
+	<string.h>
+
+1673208644 source:c:\users\gatta\downloads\annuaire\projet_codeblocks\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+	"fonctions.h"
+
+1672160675 source:c:\users\gatta\downloads\annuaire\projet_codeblocks\trier_clients_par_nom.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fonctions.h"
+
+1672160675 source:c:\users\gatta\downloads\annuaire\projet_codeblocks\verifier_validite_annuaire_client.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1673207522 source:c:\users\gatta\downloads\annuaire\projet_codeblocks\ajouter_client.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fonctions.h"
+
+1673207604 source:c:\users\gatta\downloads\annuaire\projet_codeblocks\modifier_mel_client.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fonctions.h"
+
+1673207676 source:c:\users\gatta\downloads\annuaire\projet_codeblocks\supprimer_client.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+
+1673207746 source:c:\users\gatta\downloads\annuaire\projet_codeblocks\modifier_client_autre_que_mel.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fonctions.h"
+
+1673207522 source:c:\users\gatta\downloads\annuaire\sae\ajouter_client.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fonctions.h"
+
+1673207235 c:\users\gatta\downloads\annuaire\sae\fonctions.h
+	"fonctions.h"
+
+1672160675 source:c:\users\gatta\downloads\annuaire\sae\couleur.c
+	<stdio.h>
+	<windows.h>
+	"fonctions.h"
+
+1672160675 source:c:\users\gatta\downloads\annuaire\sae\ecriture_annuaire_client.c
+	<stdio.h>
+	<string.h>
+
+1673208448 source:c:\users\gatta\downloads\annuaire\sae\filtrer_client_donnee_manquantes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fonctions.h"
+	<stdio.h>
+	<string.h>
+
+1673208767 source:c:\users\gatta\downloads\annuaire\sae\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+	"fonctions.h"
+
+1673207746 source:c:\users\gatta\downloads\annuaire\sae\modifier_client_autre_que_mel.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fonctions.h"
+
+1673207604 source:c:\users\gatta\downloads\annuaire\sae\modifier_mel_client.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fonctions.h"
+
+1673207676 source:c:\users\gatta\downloads\annuaire\sae\supprimer_client.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+
+1672160675 source:c:\users\gatta\downloads\annuaire\sae\trier_clients_par_nom.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fonctions.h"
+
+1672160675 source:c:\users\gatta\downloads\annuaire\sae\verifier_validite_annuaire_client.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1673210989 source:c:\users\gatta\downloads\annuaire\sae\afficher_annuaire_client.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fonctions.h"
+

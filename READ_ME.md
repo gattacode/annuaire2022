@@ -13,8 +13,19 @@ Pour utiliser cette application, vous avez besoin de :
 
 Pour utiliser cette application sur votre ordinateur, suivez ces étapes :
 
-1.  Téléchargez le dossier`SAE` sur votre ordinateur
-2.  Ouvrez le fichier `annuaire.exe` situé dans le dossier `bin`
+Méthode 1:
+
+1.  Téléchargez le dossier`annuaire` sur votre ordinateur
+2.  Allez dans le dossier `SAE`
+3.  Ouvrez le fichier `annuaire.exe` situé dans le dossier `bin`
+
+Dans le cas où l'application crash avec le méthode 1:
+
+Méthode 2:
+
+1.  Téléchargez le dossier`annuaire` sur votre ordinateur
+2.  Allez dans le dossier `SAE`
+3.  Ouvrez le fichier `ANNUAIRE_C.cpb` dans CODE:BLOCKS
 
 ## Utilisation
 
