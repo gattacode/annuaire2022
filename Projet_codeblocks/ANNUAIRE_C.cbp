@@ -62,6 +62,9 @@
 		<Unit filename="supprimer_client.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="test.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="trier_clients_par_nom.c">
 			<Option compilerVar="CC" />
 		</Unit>

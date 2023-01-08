@@ -55,7 +55,7 @@ int trier_clients_par_nom(const char *nom_fichier) {
     qsort(lignes, num_lignes, sizeof(ligne), compare_lignes);
 
     // On ouvre le fichier "trier_alpha.csv" en mode ecriture
-    annuaire = fopen("fichier.txt", "w");
+    annuaire = fopen("trier_alpha.csv", "w");
     if (annuaire == NULL) {
         perror("Fichier introuvable");
         return 1;
