@@ -1,0 +1,76 @@
+# depslib dependency file v1.0
+1673360950 source:c:\users\emman\onedrive\bureau\travail\exercice c\annuairetest\suprimer_client.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+
+1673361171 source:c:\users\emman\onedrive\bureau\travail\exercice c\annuairetest\ajout_client.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fonctions.h"
+
+1673359795 c:\users\emman\onedrive\bureau\travail\exercice c\annuairetest\fonctions.h
+
+1673361097 source:c:\users\emman\onedrive\bureau\travail\exercice c\annuairetest\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+	"fonctions.h"
+
+1673360950 source:c:\users\emman\onedrive\bureau\travail\exercice c\annuairetest\modifier_autre_que_mail.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fonctions.h"
+
+1673360950 source:c:\users\emman\onedrive\bureau\travail\exercice c\annuairetest\modifier_mail.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fonctions.h"
+
+1673359898 source:c:\users\emman\onedrive\bureau\travail\exercice c\annuairetest\couleur.c
+	<stdio.h>
+	<windows.h>
+	"fonctions.h"
+
+1673360077 source:c:\users\emman\onedrive\bureau\travail\exercice c\annuairetest\afficher_annuaire_client.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fonctions.h"
+
+1673360110 source:c:\users\emman\onedrive\bureau\travail\exercice c\annuairetest\ecriture_annuaire_client.c
+	<stdio.h>
+	<string.h>
+
+1673360145 source:c:\users\emman\onedrive\bureau\travail\exercice c\annuairetest\filtrer_client_donnee_manquantes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fonctions.h"
+	<stdio.h>
+	<string.h>
+
+1673360172 source:c:\users\emman\onedrive\bureau\travail\exercice c\annuairetest\trier_clients_par_nom.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fonctions.h"
+
+1673360207 source:c:\users\emman\onedrive\bureau\travail\exercice c\annuairetest\verifier_validite_annuaire_client.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1673361098 source:e:\annuairetest\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+	"fonctions.h"
+
+1673359796 e:\annuairetest\fonctions.h
+
